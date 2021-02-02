@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "mkdir -p ./build && cp ./src/index.html ./build/ && webpack -p --config webpack.production.config.js",
-    "start": "PORT=8081 node dev-server.js"
+    "start": "PORT=8081 node dev-server.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -36,21 +38,21 @@
     "webpack-dev-server": "^1.9.0"
   },
   "dependencies": {
-    "babel-core": "^5.2.17",
-    "babel-loader": "^5.0.0",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.0.0",
     "bluebird": "^2.9.25",
     "bootstrap": "^3.3.4",
-    "css-loader": "^0.12.0",
+    "css-loader": "^0.15.0",
     "extract-text-webpack-plugin": "^0.8.0",
     "file-loader": "^0.8.1",
     "history": "^1.17.0",
     "keymirror": "^0.1.1",
-    "less": "^2.5.0",
+    "less": "^3.0.2",
     "less-loader": "^2.2.0",
     "maco": "^2.0.3",
     "ngraph.events": "0.0.3",
     "node-libs-browser": "^0.5.0",
-    "qs": "^4.0.0",
+    "qs": "^6.0.4",
     "rafor": "^1.0.2",
     "react": "^0.14.5",
     "react-bootstrap": "^0.28.1",
@@ -60,8 +62,10 @@
     "style-loader": "^0.12.2",
     "three.orientation": "^1.1.0",
     "unrender": "git+https://github.com/anvaka/unrender.git",
-    "url-loader": "^0.5.5",
+    "url-loader": "^0.6.0",
     "webgl-enabled": "^1.0.3",
-    "webpack": "^1.9.11"
-  }
+    "webpack": "^2.2.0",
+    "snyk": "^1.440.4"
+  },
+  "snyk": true
 }
