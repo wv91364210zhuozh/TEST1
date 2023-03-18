@@ -45,7 +45,7 @@
     "file-loader": "^0.8.1",
     "history": "^1.17.0",
     "keymirror": "^0.1.1",
-    "less": "^2.5.0",
+    "less": "^3.0.2",
     "less-loader": "^2.2.0",
     "maco": "^2.0.3",
     "ngraph.events": "0.0.3",
@@ -60,7 +60,7 @@
     "style-loader": "^0.12.2",
     "three.orientation": "^1.1.0",
     "unrender": "git+https://github.com/anvaka/unrender.git",
-    "url-loader": "^0.5.5",
+    "url-loader": "^0.6.0",
     "webgl-enabled": "^1.0.3",
     "webpack": "^1.9.11"
   }
